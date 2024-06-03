@@ -23,19 +23,16 @@ body {
       rgb(var(--background-start-rgb))
     );
     height: 100vh;
-  /* height: 100dvh; */
-  /* width: 100dvw; */
-  /* overflow: hidden; */
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
   }
-}
-
-html,
-body {
+  
+  @layer utilities {
+    .text-balance {
+      text-wrap: balance;
+    }
+  }
+  
+  html,
+  body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }

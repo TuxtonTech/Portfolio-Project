@@ -1,9 +1,15 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
-type Props = {}
 
-export default function Header({ }: Props) {
+type Props = {
+    data: {
+        email: string;
+        otherLinks: string[];
+    }
+}
+
+export default function Header({ data }: Props) {
     const onAnimateComplete = () => {
       document.body.style.overflow = "auto"
   }
@@ -19,10 +25,12 @@ export default function Header({ }: Props) {
               opacity: 1,
               scale: 1
               }} transition={{
-            duration: 1
+            duration: 1.5
         }}>
-            <div className='flex flex-row items-center'>
-              <SocialIcon className='hover' url='https://github.com/TuxtonTech' bgColor='transparent' />
+              <div className='flex flex-row items-center'>
+                  {data.otherLinks.map((link, i) => (
+                      <SocialIcon  className='hover' key={i} url={link} bgColor='transparent' />
+                  ) )}
             </div>
           </motion.div>
           <motion.div initial={{
@@ -34,11 +42,11 @@ export default function Header({ }: Props) {
               opacity: 1,
               scale:1
               }} transition={{
-              duration: 1
+              duration: 1.5
           }} onAnimationComplete={onAnimateComplete}>
             <div className='flex flex-row items-center '>
             <SocialIcon className='hover' network='email' url='' bgColor='transparent' />
-            <p className='uppercase hidden sm:inline-flex text-sm cursor-pointer hover'>Get In Touch</p>
+            <p className='uppercase  mobile:hidden text-sm cursor-pointer hover'>Get In Touch</p>
           </div>
               
         </motion.div>

@@ -1,30 +1,47 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import Header from "@/components/header";
 import Hero from "@/components/Hero";
+import About from "@/components/About"
+import Experience from "@/components/Experience";
+import Skills from "@/components/Skills"
+import Projects from "@/components/Projects";
 
-const inter = Inter({ subsets: ["latin"] });
+import data from "@/public/userData"
+
 
 export default function Home() {
   return (
     <div
-      // className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-      style={{padding:"0", background: ""}}
-              
       className="h-screen snap-y snap-mandatory overflow-scroll z-0"
     >
       <Head>
-        <title>Grant Pierce Portfolio</title>
+        <title>{data.name + "'s Portfolio"}</title>
       </Head>
 
-      
-      <Header />
+      <Header data={data.navBar} />
 
       <section id="hero" className="snap-center">
-        <Hero />
+          <Hero data={data.welcomePage} />
       </section>
-      
+
+      <section id="about" className="snap-center">
+          <About data={data.aboutPage} />
+      </section>
+
+      <section id="experience" className="snap-center">
+        <Experience data={data.experiencePage} />
+      </section>
+
+      <section id="skills" className="snap-start">
+        <Skills data={ data.skillsPage } />
+      </section>
+
+      <section id="projects" className="snap-start">
+        <Projects data={data.projectsPage}/>
+      </section>
+
+
     </div>
   );
 }
