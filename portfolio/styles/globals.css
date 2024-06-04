@@ -34,9 +34,61 @@ body {
   html,
   body {
   overflow-x: hidden;
+  overflow-y: hidden;
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width: .75rem;
+  background: rgba(255, 255, 255, 0.11)
+}
+
+::-webkit-scrollbar-corner {
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.152);
+  border-radius: .5rem;
+}
+
+
+
 body {
-  position: relative;
+  /* position: relative; */
+  
+}
+
+form  {
+  border-radius: 1rem;
+  box-shadow: inset .25rem .25rem .5rem rgb(var(--background-end-rgb));
+  padding: 1rem;
+  
+  input, textarea {
+    outline: none;
+    resize: none;
+    border-radius: .25rem;
+    background: rgba(255, 255, 255, 0.11);
+    color: white;
+    padding-left: .5rem;
+  }
+
+  input {
+    height: 2rem;
+  }
+
+  button {
+    background: rgb(var(--background-end-rgb));
+    opacity: 1;
+    border-radius: .25rem;
+    height: 2rem;
+
+  }
+  button:hover {
+    opacity: .8;
+  }
+
 }

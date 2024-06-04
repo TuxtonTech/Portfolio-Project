@@ -33,7 +33,18 @@ export default function Hero({ data }: Props) {
                 duration: 1.3
           }} className='absolute text-center'>
             <img className="relative rounded-full h-32 w-32 mx-auto object-cover" src={data.img} alt="" />
-              <h2 className='text-sm text-center uppercase text-gray-500 pt-2 pb-2 pl-4 tracking-[15px] mobile: tracking-[10px]'>{ data.positionTitle }</h2>
+        <motion.h2
+          initial={{
+            letterSpacing: '0px'
+          }}
+          animate={{
+            letterSpacing: '15px'
+          }}
+          transition={{
+            duration: 1.3
+          }}
+          
+          className='text-sm text-center uppercase text-gray-500 pt-2 pb-2 pl-4 tracking-[15px] mobile: tracking-[10px]'>{data.positionTitle}</motion.h2>
               <div className='flex flex-row justify-around text-center text-gray-400 text-sm mx-auto p-4 sm:p-0 pt-0'>
                   <Link href="#about" className='hover cursor-pointer'>About</Link>
                   <Link href="#experience" className='hover cursor-pointer'>Experience</Link>

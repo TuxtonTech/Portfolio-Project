@@ -16,8 +16,7 @@ export default function Skill({data, left}: Props) {
                   opacity: 0
                 }}
                 transition={{ duration: .5 }}
-                viewport={{once: false, amount: 0}}
-                animate={{ 
+                whileInView={{ 
                   x: 0,
                   opacity: 1.3
                 }} className='group relative flex cursor-pointer'>

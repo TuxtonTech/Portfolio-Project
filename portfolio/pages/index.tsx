@@ -8,14 +8,16 @@ import Skills from "@/components/Skills"
 import Projects from "@/components/Projects";
 
 import data from "@/public/userData"
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
   return (
     <div
-      className="h-screen snap-y snap-mandatory overflow-scroll z-0"
+      className="h-screen snap-y snap-mandatory overflow-y-scroll z-0"
     >
       <Head>
+        <link rel="icon" type="image/x-icon" href="https://tuxtontech.com/imgs/egeus.png" />
         <title>{data.name + "'s Portfolio"}</title>
       </Head>
 
@@ -41,7 +43,9 @@ export default function Home() {
         <Projects data={data.projectsPage}/>
       </section>
 
-
+      <section id="contact" className="snap-start">
+        <Contact data={ data.contactPage } />
+      </section>
     </div>
   );
 }

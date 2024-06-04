@@ -4,7 +4,6 @@ import { SocialIcon } from 'react-social-icons'
 
 type Props = {
     data: {
-        email: string;
         otherLinks: string[];
     }
 }
@@ -44,9 +43,11 @@ export default function Header({ data }: Props) {
               }} transition={{
               duration: 1.5
           }} onAnimationComplete={onAnimateComplete}>
-            <div className='flex flex-row items-center '>
-            <SocialIcon className='hover' network='email' url='' bgColor='transparent' />
-            <p className='uppercase  mobile:hidden text-sm cursor-pointer hover'>Get In Touch</p>
+              <div className='flex flex-row items-center h-[50px] '>
+                  <div className='hidden mobile:inline'>
+            <SocialIcon className='sm:hidden ' network='email' url='' href='#contact' bgColor='transparent' />
+                  </div>
+            <a  href='#contact' className='uppercase  mobile:hidden text-sm cursor-pointer hover'>Get In Touch</a>
           </div>
               
         </motion.div>

@@ -15,7 +15,11 @@ const config: Config = {
       },
     },
     screens: {
-      'mobile': { 'max': '467px'}
+      'mobile': { 'max': '599px' },
+      'sm': {'min': '600px'},
+      'md': {'min': '768px',}, // Medium screens
+      'lg': {'min': '1024px',}, // Large screens
+      'xl': {'min': '1280px'} // Extra-large screens
     },
   },
   plugins: [],
