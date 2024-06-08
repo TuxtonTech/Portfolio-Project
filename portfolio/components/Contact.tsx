@@ -30,10 +30,7 @@ export default function Contact({data}: Props) {
                       <p className='text-2xl'>{ data.phoneNumber }</p>
                       
                   </div>
-                  <div className='flex justify-left space-x-5 items-center'>
-                      <MapPinIcon className='w-7 h-7 animate-pulse'/>
-                      <p className='text-2xl'>{ data.address }</p>
-                  </div>
+                  
                   <div className='flex justify-left space-x-5 items-center'>
                     <EnvelopeIcon className='w-7 h-7 animate-pulse'/>
                       <p className="text-2xl">{ data.email }</p>

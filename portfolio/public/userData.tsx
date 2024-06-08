@@ -71,7 +71,7 @@ export default {
             //Project name
             name: "Egeus",
             //Short project summary
-            desc: "Egeus is if a product scraper and a listing bot had a baby. Egeus finds cheap, trending products at the click of a button. With Egeus, you have access to a pool of the most popular products. Found a low-key product? No problem, Egeus will scrape the web and import that product. Egeus has generated users over $100,000 in sales. Egeus is proprietary software developed and licensed by TuxtonTechnologies exclusively for use by Kicks Club LLC." 
+            desc: "Egeus is if a product scraper and a listing bot had a baby. Egeus finds cheap, trending products at the click of a button. With Egeus, you have access to a pool of the most popular products. Found a low-key product? No problem, Egeus will scrape the web and import that product. Egeus has generated users over $100,000 in sales. Egeus is proprietary software developed and licensed by TuxtonTechnologies, exclusively for use by Kicks Club LLC." 
         }, {
             img: "https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png", //Image of completed projects
             name: "Netflix Clone",
