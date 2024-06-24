@@ -36,9 +36,9 @@ export default function Contact({data}: Props) {
                       <p className="text-2xl">{ data.email }</p>
                   </div>
               </div>
-              <form action="" className='flex flex-col space-y-2 w-fit mx-auto'>
+              <form action="" className='flex flex-col  space-y-2 w-fit mx-auto '>
                       <div className='flex space-x-2 '>
-                        <input type="text" placeholder='First Name' />
+                        <input className='mobile:w-[50%]' type="text" placeholder='First Name' />
                         <input type="text" placeholder='Last Name'/>
                       </div>
 

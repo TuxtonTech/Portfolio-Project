@@ -25,7 +25,7 @@ export default {
         {
             positionTitle: "CEO of TuxtonTech",
             companyName: "TuxtonTech",
-            companyLogo: "https://tuxtontech.com/imgs/egeus.png",
+            companyLogo: "https://tuxtontech.com/apps/egeus/imgs/egeus.png",
             techStack: [
                 "https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png",
                 "https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png",
@@ -67,11 +67,10 @@ export default {
         
         {
             //Image of completed project
-            img: "https://cdn.discordapp.com/attachments/827440996332601364/1247315723764629568/image.png?ex=665f94ca&is=665e434a&hm=8ecaaedfa922090aed3784483f637b38afaaf6d1d46d5418e60634973b6e3bb3&",
-            //Project name
+            img: "https://tuxtontech.com/apps/egeus/imgs/egeus_user_pic.png",
             name: "Egeus",
             //Short project summary
-            desc: "Egeus is if a product scraper and a listing bot had a baby. Egeus finds cheap, trending products at the click of a button. With Egeus, you have access to a pool of the most popular products. Found a low-key product? No problem, Egeus will scrape the web and import that product. Egeus has generated users over $100,000 in sales. Egeus is proprietary software developed and licensed by TuxtonTechnologies, exclusively for use by Kicks Club LLC." 
+            desc: "Egeus is if a product scraper and listing automation had a baby. Egeus finds cheap, trending products at the click of a button. With Egeus, you have access to a pool of the most popular products. Found a low-key product? No problem, Egeus will scrape the web and import that product. Egeus has generated users over $100,000 in sales. Egeus is proprietary software developed and licensed by TuxtonTechnologies, exclusively for use by Kicks Club LLC." 
         }, {
             img: "https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png", //Image of completed projects
             name: "Netflix Clone",
