@@ -17,7 +17,7 @@ export default function Home() {
       className="h-screen snap-y snap-mandatory overflow-y-scroll z-0"
     >
       <Head>
-        <link rel="icon" type="image/x-icon" href="https://tuxtontech.com/imgs/egeus.png" />
+        <link rel="icon" type="image/x-icon" href={data.titleImage} />
         <title>{data.name + "'s Portfolio"}</title>
       </Head>
 
@@ -35,9 +35,9 @@ export default function Home() {
         <Experience data={data.experiencePage} />
       </section>
 
-      <section id="skills" className="snap-start">
+      {/* <section id="skills" className="snap-start">
         <Skills data={ data.skillsPage } />
-      </section>
+      </section> */}
 
       <section id="projects" className="snap-start">
         <Projects data={data.projectsPage}/>

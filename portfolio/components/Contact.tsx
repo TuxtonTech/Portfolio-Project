@@ -27,16 +27,16 @@ export default function Contact({data}: Props) {
               <div className='space-y-5'>
                   <div className='flex items-center space-x-5 justify-left'>
                       <PhoneIcon className='h-7 w-7 animate-pulse' />
-                      <p className='text-2xl'>{ data.phoneNumber }</p>
+                      <p className='text-xl md:text-2xl'>{ data.phoneNumber }</p>
                       
                   </div>
                   
                   <div className='flex justify-left space-x-5 items-center'>
                     <EnvelopeIcon className='w-7 h-7 animate-pulse'/>
-                      <p className="text-2xl">{ data.email }</p>
+                      <p className="text-xl md:text-2xl">{ data.email }</p>
                   </div>
               </div>
-              <form action="" className='flex flex-col  space-y-2 w-fit mx-auto '>
+              <form action="" className='flex flex-col  space-y-2 mx-auto '>
                       <div className='flex space-x-2 '>
                         <input className='mobile:w-[50%]' type="text" placeholder='First Name' />
                         <input type="text" placeholder='Last Name'/>

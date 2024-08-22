@@ -21,8 +21,8 @@ export default function Hero({ data }: Props) {
     })
 
   return (
-      <div className=' relative h-screen flex flex-col space-y-8 items-center justify-center task-center overflow-hidden'>
-        <BackgroundCircles />
+      <div className=' relative h-screen flex flex-col space-y-8 items-center justify-center task-center overflow-hidden overflow-x-hidden'>
+        <BackgroundCircles/>
           <motion.div initial={{
               opacity: 0,
               scale: .5
