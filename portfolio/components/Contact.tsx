@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { ChangeEvent } from 'react'
 import {PhoneIcon, MapPinIcon, EnvelopeIcon} from '@heroicons/react/24/solid'
-
 
 type Props = {
     data: {
@@ -10,7 +9,22 @@ type Props = {
     }
 }
 
-export default function Contact({data}: Props) {
+export default function Contact({ data }: Props) {   
+
+  
+
+  const handleSubmit = (e: any) => {
+      e.preventDefault();
+      const form = document.querySelector("form")!
+      form.onsubmit = ()  => {
+          const formData = new FormData(form)
+
+          const body = new URLSearchParams(`su=${formData.get("subject")}&body=${formData.get("body")}`)
+          window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${data.email}&${body}&tf=cm`, "_blank")?.focus()
+      }
+    // Handle form submission, e.g., send data to an API
+  };
+
   return (
       <div className='h-screen relative flex flex-col text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
           <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
@@ -36,17 +50,18 @@ export default function Contact({data}: Props) {
                       <p className="text-xl md:text-2xl">{ data.email }</p>
                   </div>
               </div>
-              <form action="" className='flex flex-col  space-y-2 mx-auto '>
+              <form onSubmit={handleSubmit} className='flex flex-col  space-y-2 mx-auto ' id='form'>
                       <div className='flex space-x-2 '>
-                        <input className='mobile:w-[50%]' type="text" placeholder='First Name' />
-                        <input type="text" placeholder='Last Name'/>
+                        <input className='mobile:w-[50%]' type="text" placeholder='First Name' required/>
+                        <input type="text" placeholder='Last Name' required/>
                       </div>
 
-                      <input type="text" placeholder='Email'  />
-                      <textarea className='resize-none' placeholder='What would you like to say?' name="" id=""></textarea>
+                      <input type="text" placeholder='Subject' name='subject' required/>
+                      <textarea className='resize-none' placeholder='What would you like to say?' name="body" id="" required></textarea>
                       <button type='submit'>Submit</button>
               </form>
           </div>
     </div>
   )
 }
+

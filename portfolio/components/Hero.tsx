@@ -48,7 +48,7 @@ export default function Hero({ data }: Props) {
               <div className='flex flex-row justify-around text-center text-gray-400 text-sm mx-auto p-4 sm:p-0 pt-0'>
                   <Link href="#about" className='hover cursor-pointer'>About</Link>
                   <Link href="#experience" className='hover cursor-pointer'>Experience</Link>
-                  <Link href="#skills" className='hover cursor-pointer'>Skills</Link>
+                  {/* <Link href="#skills" className='hover cursor-pointer'>Skills</Link> */}
                   <Link href="#projects" className='hover cursor-pointer'>Projects</Link>
               </div>
             <div className="relative ">

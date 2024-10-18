@@ -12,7 +12,7 @@ export default {
         positionTitle: "Software Engineer",
         typeWriterText: [
             "Hi, My Name's Grant Pierce", 
-            "Passionate about continuous learning",
+            "Machine learning enthusiast",
             "Full Stack Developer",
             "Powered by React/Next.js",
         ]
@@ -23,19 +23,20 @@ export default {
     },
     "experiencePage": [
         {
-            positionTitle: "CEO of TuxtonTechnologies",
+            positionTitle: "Founder of TuxtonTechnologies",
             companyName: "TuxtonTech",
             companyLogo: "https://tuxtontech.com/assets/imgs/gold_egeus.png",
             techStack: [
                 "https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png",
-                "https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png",
-                "https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png",
+                "https://tuxtontech.com/assets/imgs/go.png",
+                "https://tuxtontech.com/assets/imgs/react.png",
+                "https://tuxtontech.com/assets/imgs/pytorch.png"
             ],
             dates: {
                 startDate: "02/15/2023",
                 endDate: "" //Leave empty if currently employed
             },
-            positionDesc: ["Founder", "Full Stack Developer"]
+            positionDesc: ["Founder", "Full Stack Developer", "Machine Learning"]
             
         },
     ],
@@ -86,9 +87,9 @@ export default {
         
     ],
     "contactPage": {
-        phoneNumber: "804-585-9732",
-        email: "grant.pierce.business@gmail.com",
-        address: "8007 Hampton Station Ct."
+        phoneNumber: "555-555-5555",
+        email: "email@gmail.com",
+        address: "1234 test rd."
     }
         
 }
